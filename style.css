@@ -1,0 +1,86 @@
+body{
+    background-color: #27374d;
+    color: #afcace;
+    font-weight: 500;
+}
+.nav-buttons{
+    background-color: #27374d;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #afcace;
+}
+.nav-buttons:hover{
+    background-color: #afcace;
+    color: #27374d;
+    transition: 0.3s;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header-cont, #main-cont{
+    display: flex;
+    justify-content: center;
+}
+#header{
+    display: flex;
+    justify-content: left;
+    width: 60%;
+    height: 40px;
+    border-bottom: 2px solid #afcace;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+#header-left{
+    display: flex;
+    width: 50%;
+}
+#header-right{
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    right: 0px;
+}
+#header-right >*{
+    padding-left: 20px;
+}
+#home{
+    display: flex;
+    justify-content: left;
+    width: 60%;
+}
+#contact-cont{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#contact-list{
+    display: flex;
+    justify-content: center;
+}
+.contact-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about-cont{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: left;
+}
+#projects-cont{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: left;
+}
+#blog-cont{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: left;
+}

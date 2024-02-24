@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>projects</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header-cont">
+            </div>
+            <div id="main-cont">
+                <div id="contact-cont">
+                    <h1>contact</h1>
+                    <div id="contact-text">
+                        I may not be active on some of the platforms sometimes,<br>but feel free to reach.
+                    </div>
+                    <div id="contact-list">
+                        <div class="contact-sm">
+                            <a href="mailto:vanshjangir0001@gmail.com"><img width="30" src="others/mail.svg" alt="mail"/></a>
+                        </div>
+                        <div class="contact-sm">
+                            <a href="https://twitter.com/vanshjangir0001"><img width="30" src="others/x-twitter.svg" alt="twitter"/></a>
+                        </div>
+                        <div class="contact-sm">
+                            <a href="https://www.instagram.com/vanshjangir_/"><img width="30" src="others/instagram.svg" alt="instagram"/></a>
+                        </div>
+                        <div class="contact-sm">
+                            <a href="https://github.com/vanshjangir"><img width="30" src="others/github.svg" alt="github"/></a>
+                        </div>
+                        <div class="contact-sm">
+                            <a href="https://gitlab.com/vanshjangir"><img width="30" src="others/gitlab.svg" alt="gitlab"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            async function loadNavbar() {
+                const response = await fetch('navbar.html');
+                const html = await response.text();
+                document.getElementById('header-cont').innerHTML = html;
+            }
+            loadNavbar();
+        </script>
+    </body>
+</html>

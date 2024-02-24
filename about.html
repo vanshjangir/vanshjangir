@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>projects</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header-cont">
+            </div>
+            <div id="main-cont">
+                <div id="about-cont">
+                    <h1>about</h1>
+                    <div id="about-text">
+                        <p>I am a B.Tech under-grad at IIIT Naya Raipur.<br>
+                        I discovered computer programming in my first year of college and it is the only thing that I am able to and want to pursue as a carrier.<br>
+                        I like to learn all kinds of things, but nowadays most of them are related to computers.<br>
+                        I also like watching good movies.<br><p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            async function loadNavbar() {
+                const response = await fetch('navbar.html');
+                const html = await response.text();
+                document.getElementById('header-cont').innerHTML = html;
+            }
+            loadNavbar();
+        </script>
+    </body>
+</html>
