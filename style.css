@@ -1,10 +1,10 @@
 body{
-    background-color: #27374d;
+    background-color: #001127;
     color: #afcace;
     font-weight: 500;
 }
 .nav-buttons{
-    background-color: #27374d;
+    background-color: #001127;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -13,7 +13,7 @@ body{
 }
 .nav-buttons:hover{
     background-color: #afcace;
-    color: #27374d;
+    color: #001127;
     transition: 0.3s;
 }
 #container{
@@ -65,6 +65,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 1px;
+    padding-left: 1px;
 }
 #about-cont{
     display: flex;
@@ -83,4 +85,23 @@ body{
     width: 60%;
     flex-direction: column;
     justify-content: left;
+}
+a{
+    text-decoration: none;
+    color: #1793d1;
+}
+.each-project{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.project-header{
+    display: flex;
+    align-items: center;
+}
+.project-header > *{
+    padding-right: 10px;
+}
+#blog-list >p{
+    padding-bottom: 10px;
 }

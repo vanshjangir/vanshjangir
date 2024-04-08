@@ -10,19 +10,34 @@
             <div id="main-cont">
                 <div id="projects-cont">
                     <h1>projects</h1>
-                    <div>
-                        my projects
+                    <div id="projects-content">
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            async function loadNavbar() {
+            async function loadNavbar(){
                 const response = await fetch('navbar.html');
                 const html = await response.text();
                 document.getElementById('header-cont').innerHTML = html;
             }
+            
+            async function loadProjects(path){
+                const response = await fetch(path);
+                const html = await response.text();
+                document.getElementById('projects-content').innerHTML += html;
+            }
+
+            let filelist = [
+                'projects/hardcode.html',
+                'projects/clientManager.html',
+                'projects/assetManager.html',
+            ];
+            
             loadNavbar();
+            for(let i=0; i<filelist.length; i++){
+                loadProjects(filelist[i]);
+            }
         </script>
     </body>
 </html>
