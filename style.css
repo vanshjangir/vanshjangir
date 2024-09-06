@@ -3,19 +3,6 @@ body{
     color: #afcace;
     font-weight: 500;
 }
-.nav-buttons{
-    background-color: #001127;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    color: #afcace;
-}
-.nav-buttons:hover{
-    background-color: #afcace;
-    color: #001127;
-    transition: 0.3s;
-}
 #container{
     display: flex;
     flex-direction: column;
@@ -25,37 +12,36 @@ body{
     display: flex;
     justify-content: center;
 }
+#main-cont{
+    flex-direction: column;
+    align-items: center;
+}
 #header{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 60%;
-    height: 40px;
     border-bottom: 2px solid #afcace;
     margin-bottom: 10px;
     margin-top: 60px;
-}
-#header-left{
-    display: flex;
-    width: 50%;
-}
-#header-right{
-    display: flex;
-    width: 50%;
-    justify-content: right;
-    right: 0px;
-}
-#header-right >*{
-    padding-left: 20px;
 }
 #home{
     display: flex;
     justify-content: left;
     width: 60%;
 }
+#about-cont,
+#projects-cont,
+#experience-cont{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: left;
+}
 #contact-cont{
     display: flex;
     flex-direction: column;
     width: 60%;
+    margin-bottom: 100px;
 }
 #contact-list{
     display: flex;
@@ -65,43 +51,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 1px;
-    padding-left: 1px;
-}
-#about-cont{
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    justify-content: left;
-}
-#projects-cont{
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    justify-content: left;
-}
-#blog-cont{
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    justify-content: left;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 a{
     text-decoration: none;
     color: #1793d1;
 }
-.each-project{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
+h4{
+    margin-bottom: -4px;
 }
-.project-header{
-    display: flex;
-    align-items: center;
+table{
+    table-layout: fixed;
+    width: 100%;
 }
-.project-header > *{
-    padding-right: 10px;
-}
-#blog-list >p{
-    padding-bottom: 10px;
+td{
+    align-content:start;
+    padding-bottom: 50px;
 }
