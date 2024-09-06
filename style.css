@@ -69,3 +69,35 @@ td{
     align-content:start;
     padding-bottom: 50px;
 }
+
+
+/* Game of life */
+#main-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#button-cont{
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+}
+
+#start-button, #stop-button, #reset-button{
+    background: none;
+    border: 0px;
+}
+
+.button-img{
+    width: 20px;
+}
+
+#population{
+    display: none;
+    margin-left: 6px;
+}
