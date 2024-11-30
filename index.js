@@ -1,5 +1,5 @@
-const REFRESH_TIME = 100
-const GEN_PROB = 0.2
+let REFRESH_TIME = 2000
+let GEN_PROB = 0.2
 
 let HEIGHT;
 let WIDTH;
@@ -155,14 +155,21 @@ function resetWorld(ctx){
     const startButton = document.getElementById("start-button");
     const startImage = document.getElementById("start-image");
     const resetButton = document.getElementById("reset-button");
+    const plusButton = document.getElementById("plus-button");
+    const minusButton = document.getElementById("minus-button");
     const population = document.getElementById("population");
+    const refreshtime = document.getElementById("refresh-time");
+
+    refreshtime.textContent = "Refresh time: " + REFRESH_TIME;
 
     buttonCont.addEventListener('mouseover', () => {
         population.style.display = 'block';
+        refreshtime.style.display = 'block';
     }, true);
     
     buttonCont.addEventListener('mouseout', () => {
         population.style.display = 'none';
+        refreshtime.style.display = 'none';
     }, true);
 
     startButton.addEventListener('click', () => {
@@ -181,6 +188,16 @@ function resetWorld(ctx){
     resetButton.addEventListener('click', () => {
         setInitialState();
         resetWorld(ctx);
+    }, true);
+    
+    plusButton.addEventListener('click', () => {
+        REFRESH_TIME += 100
+        refreshtime.textContent = "Refresh time: " + REFRESH_TIME;
+    }, true);
+    
+    minusButton.addEventListener('click', () => {
+        REFRESH_TIME -= Math.min(REFRESH_TIME - 100, 100)
+        refreshtime.textContent = "Refresh time: " + REFRESH_TIME;
     }, true);
 
     setInitialState();
