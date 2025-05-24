@@ -1,3 +1,3 @@
 Hi\
-I'm vansh\
-This is my [website](https://vanshjangir.github.io)
+I'm Vansh\
+[Visit for more](https://vanshjangir.github.io)
