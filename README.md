@@ -1,3 +1,3 @@
 Hi\
-I'm vansh\
+I'm Vansh Jangir\
 [Visit for more](https://vanshjangir.in)
